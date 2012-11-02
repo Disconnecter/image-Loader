@@ -26,8 +26,7 @@
 
         offset.x = IMAGE_INDENT + ((visibleImages + i) % COLUMNS_COUNT) * (IMAGE_SIDE_SIZE + IMAGE_INDENT);
         offset.y = IMAGE_INDENT + ((visibleImages + i) / COLUMNS_COUNT) * (IMAGE_SIDE_SIZE + IMAGE_INDENT);
-        
-//        NSString *url = [NSString stringWithFormat:@"http://forum.develdo.com/public/photo/0000/0000/%i.jpg",i + 1];
+
         NSString *url = [NSString stringWithFormat:@"http://images.apple.com/euro/home/images/ipodtouch_hero.jpg"];
         YTImageRequest *imgReq = [YTImageRequest new];
         [imgReq imageWithURL:[NSURL URLWithString:url]
